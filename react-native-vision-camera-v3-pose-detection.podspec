@@ -16,12 +16,12 @@ Pod::Spec.new do |s|
 
   s.source_files = "ios/**/*.{h,m,mm}"
 
-  s.dependency "React-Core"
-  s.dependency "VisionCamera"
-  s.dependency "GoogleMLKit/PoseDetection"
-  s.pod_target_xcconfig = {
-    "HEADER_SEARCH_PATHS" => "$(inherited) \"$(PODS_ROOT)/VisionCamera/ios/FrameProcessors\" \"$(PODS_ROOT)/VisionCamera/ios\" \"$(PODS_ROOT)/Headers/Public/VisionCamera\" \"$(PODS_CONFIGURATION_BUILD_DIR)/VisionCamera/VisionCamera.framework/Headers\"",
-    "CLANG_CXX_LANGUAGE_STANDARD" => "c++17",
-    "USE_HEADERMAP" => "YES"
-  }
+ s.dependency "React-Core"
+ s.dependency "VisionCamera"
+ s.dependency "GoogleMLKit/PoseDetection"
+ s.pod_target_xcconfig = {
+  "HEADER_SEARCH_PATHS" => "$(inherited) \"$(PODS_ROOT)/VisionCamera/ios\" \"$(PODS_ROOT)/Headers/Public/VisionCamera\" \"$(PODS_CONFIGURATION_BUILD_DIR)/VisionCamera/VisionCamera.framework/Headers\"",
+  "CLANG_CXX_LANGUAGE_STANDARD" => "c++17",
+  "USE_HEADERMAP" => "YES"
+}
 end
