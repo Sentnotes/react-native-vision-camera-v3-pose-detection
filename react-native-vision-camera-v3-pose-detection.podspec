@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
   s.source_files = "ios/**/*.{h,m,mm}"
 
   s.dependency "React-Core"
-  s.dependency "VisionCamera"
+   s.dependency "VisionCamera/FrameProcessors"
   s.dependency "GoogleMLKit/PoseDetection"
   s.pod_target_xcconfig = {
     "HEADER_SEARCH_PATHS" => "\"$(PODS_ROOT)/VisionCamera/ios/FrameProcessors\" \"$(PODS_ROOT)/VisionCamera/ios\"",
