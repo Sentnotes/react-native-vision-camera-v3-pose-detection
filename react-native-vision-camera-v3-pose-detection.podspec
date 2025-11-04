@@ -19,5 +19,8 @@ Pod::Spec.new do |s|
   s.dependency "React-Core"
   s.dependency "VisionCamera"
   s.dependency "GoogleMLKit/PoseDetection"
-
+  s.pod_target_xcconfig = {
+    "HEADER_SEARCH_PATHS" => "\"$(PODS_ROOT)/VisionCamera/ios/FrameProcessors\" \"$(PODS_ROOT)/VisionCamera/ios\"",
+    "CLANG_CXX_LANGUAGE_STANDARD" => "c++17"
+  }
 end
